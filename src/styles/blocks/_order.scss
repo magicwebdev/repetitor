@@ -1,0 +1,36 @@
+.order {
+  padding: 100px 0;
+  text-align: center;
+  background: linear-gradient(180deg, rgba(255, 225, 148, 0) 0%, rgba(255, 179, 25, 0.2) 50%, rgba(255, 225, 148, 0) 100%);
+  &__title {
+  }
+  &__subtitle {
+    max-width: 700px;
+  }
+  &__text {
+    text-align-last: left;
+  }
+  &__text-link {
+
+  }
+  &__form {
+    margin-top: 40px;
+  }
+  &__form-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 60px;
+  }
+  &__form-inner {
+  }
+  &__form-input {
+  }
+  &__note {
+    margin: 20px 0 30px;
+    color: $light;
+  }
+  &__note-link {
+  }
+  &__btn {
+  }
+}

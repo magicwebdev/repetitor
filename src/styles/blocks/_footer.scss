@@ -1,0 +1,15 @@
+.footer {
+  padding: 20px 0;
+  background: linear-gradient(180.01deg, #FFE194 -82.49%, #FFB319 143.12%);
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__text {
+    font-size: 14px;
+    line-height: 1;
+  }
+  &__text-link {
+    text-decoration: underline;
+  }
+}

@@ -1,0 +1,23 @@
+.btn {
+  width: 280px;
+  height: 60px;
+  background: linear-gradient(270deg, #FFB319 -3.04%, rgba(255, 179, 25, 0.8) 100%);
+  box-shadow: 0px 4px 4px rgba(255, 179, 25, 0.25);
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 60px;
+  text-transform: uppercase;
+  text-align: center;
+  color: $white;
+  transition: all 0.3s ease;
+  &:hover {
+    opacity: .7;
+  }
+}
+
+.link {
+  font-weight: 500;
+  color: $accent;
+  text-decoration: underline;
+}

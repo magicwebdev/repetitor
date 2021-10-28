@@ -1,0 +1,105 @@
+/* Colors */
+$black: #262727;
+$white: #ffffff;
+$dark: #19253D;
+$light: #939597;
+$accent: #FFB319;
+$accent-light: #FFE194;
+
+/* Animation */
+@keyframes circleRadiusTop {
+  0% {
+      border-radius: 50% 50% 70% 30% / 76% 50% 50% 24%;
+      transform: translate3d(0, 0, 0);
+  }
+  25% {
+      border-radius: 38% 62% 53% 47% / 37% 47% 53% 63%;
+      transform: translate3d(0, -20px, 0);
+  }
+  50% {
+      border-radius: 50% 50% 66% 34% / 65% 47% 53% 35%;
+      transform: translate3d(-20px, -20px, 0);
+  }
+  100% {
+      border-radius: 50% 50% 30% 70% / 47% 69% 31% 53%;
+      transform: translate3d(-20px, 0, 0);
+  }
+}
+
+@keyframes circleRadiusBottom {
+  0% {
+      border-radius: 61% 39% 44% 56% / 60% 55% 45% 40%;
+      transform: translate3d(0, 0, 0);
+  }
+  25% {
+      border-radius: 61% 39% 44% 56% / 60% 55% 45% 40%;
+      transform: translate3d(0, -20px, 0);
+  }
+  50% {
+      border-radius: 61% 39% 44% 56% / 60% 55% 45% 40%;
+      transform: translate3d(-20px, -20px, 0);
+  }
+  100% {
+      border-radius: 61% 39% 44% 56% / 60% 55% 45% 40%;
+      transform: translate3d(-20px, 0, 0);
+  }
+}
+
+/* Base style */
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+html {
+  box-sizing: border-box;
+}
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+}
+ul,
+li {
+  list-style: none;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+button {
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  color: inherit;
+  font-family: inherit;
+}
+table {
+  border-collapse:collapse;
+  border-spacing:0;
+}
+input:not([type='checkbox']):not([type='radio']),
+textarea {
+  display: block;
+  width: 100%;
+  font-family: inherit;
+  resize: none;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: $black;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* Blocks style */
+@import 'blocks/**/*.scss';

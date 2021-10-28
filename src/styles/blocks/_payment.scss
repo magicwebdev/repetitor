@@ -1,0 +1,44 @@
+.payment {
+  padding: 100px 0;
+  text-align: center;
+  background: url('/src/images/payment-bg.jpg') repeat-x;
+  &__title {
+  }
+  &__subtitle {
+  }
+  &__wrapper {
+    text-align: left;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 60px;
+    margin-bottom: 30px;
+  }
+  &__inner {
+  }
+  &__list-title {
+    margin-bottom: 30px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: $black;
+  }
+  &__list {
+  }
+  &__list-item {
+  }
+  &__text {
+    margin-bottom: 30px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: $black;
+  }
+  &__img {
+    margin: 0 auto;
+  }
+  &__note {
+    color: $light;
+  }
+  &__note-link {
+  }
+}
