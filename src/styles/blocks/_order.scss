@@ -19,15 +19,64 @@
   &__form-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(6, auto);
     column-gap: 60px;
-  }
-  &__form-inner {
+    row-gap: 20px;
   }
   &__form-input {
+    padding: 18px 30px;
+    background: $white;
+    border: 1px solid rgba(147, 149, 151, 0.1);
+    box-shadow: 0px 5px 5px rgba(147, 149, 151, 0.25);
+    border-radius: 8px;
+    font-size: 16px;
+    line-height: 24px;
+    color: $black;
+    &--select {
+      appearance: none;
+      background: $white url('/src/images/arrow.png') no-repeat top 60% right 5%;
+
+      font-family: inherit;
+      font-size: 16px;
+      line-height: 24px;
+      color: $light;
+    }
+    &--file {
+      appearance: none;
+      font-family: inherit;
+      font-size: 16px;
+      line-height: 24px;
+      color: $light;
+    }
+    &--date {
+      background: $white url('/src/images/calendar.png') no-repeat top 60% right 5%;
+      font-family: inherit;
+      font-size: 16px;
+      line-height: 24px;
+      color: $light;
+    }
+    &--textarea {
+      grid-column: 2/3;
+      grid-row: 5/7;
+    }
+    &:focus {
+      border: 1px solid $accent;
+    }
+    &:active {
+      border: 1px solid $accent;
+    }
+    &::placeholder {
+      font-family: inherit;
+      font-size: 16px;
+      line-height: 24px;
+      color: $light;
+    }
   }
   &__note {
     margin: 20px 0 30px;
     color: $light;
+    font-size: 14px;
+    line-height: 20px;
   }
   &__note-link {
   }

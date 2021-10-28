@@ -18,7 +18,7 @@
   &__content {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
   }
   &__text + .cooperation__text {
     margin-top: 30px;

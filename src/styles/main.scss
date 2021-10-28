@@ -52,6 +52,7 @@ $accent-light: #FFE194;
   box-sizing: inherit;
   margin: 0;
   padding: 0;
+  outline: none;
 }
 html {
   box-sizing: border-box;
@@ -86,6 +87,10 @@ textarea {
   width: 100%;
   font-family: inherit;
   resize: none;
+}
+
+input[type=date]::-webkit-calendar-picker-indicator {
+  opacity: 0;
 }
 
 body {

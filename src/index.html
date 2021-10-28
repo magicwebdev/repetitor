@@ -137,16 +137,9 @@
       </p>
       <form action="#" method="post" class="order__form">
         <div class="order__form-wrapper">
-          <div class="order__form-inner">
-            <input class="order__form-input" readonly type="text" name="name" placeholder="Имя *">
-            <input class="order__form-input" readonly type="tel" name="phone" placeholder="Телефон *">
-            <input class="order__form-input" readonly type="email" name="email" placeholder="Email *">
-            <input class="order__form-input" type="text" name="institution" placeholder="Учебное заведение">
-            <input class="order__form-input" type="text" name="faculty" placeholder="Факультет">
-            <input class="order__form-input" type="date" name="deadline" placeholder="Выполнить заказ до">
-          </div>
-          <div class="order__form-inner">
-            <select class="order__form-input" name="choice">
+
+            <input class="order__form-input" required type="text" name="name" placeholder="Имя *">
+            <select class="order__form-input  order__form-input--select" name="choice">
               <option value="" disabled selected>Вид работы</option>
               <option value="first">Контрольная работа</option>
               <option value="second">Курсовая работа</option>
@@ -155,12 +148,17 @@
               <option value="second">Дипломная работа</option>
               <option value="third">Другое</option>
             </select>
+            <input class="order__form-input" required type="tel" name="phone" placeholder="Телефон *">
             <input class="order__form-input" type="text" name="object" placeholder="Предмет">
+            <input class="order__form-input" required type="email" name="email" placeholder="Email *">
             <input class="order__form-input" type="text" name="topic" placeholder="Тема">
-            <input class="order__form-input" type="file" name="files" placeholder="Прикрепить файлы">
-            <textarea class="order__form-input" name="notes" id=""
+            <input class="order__form-input" type="text" name="institution" placeholder="Учебное заведение">
+            <input class="order__form-input order__form-input--file" type="file" name="files" placeholder="Прикрепить файлы">
+            <input class="order__form-input" type="text" name="faculty" placeholder="Факультет">
+            <textarea class="order__form-input  order__form-input--textarea" name="notes" id=""
               placeholder="Дополнительная информация по работе"></textarea>
-          </div>
+            <input class="order__form-input order__form-input--date" type="date"  value="qwe" name="deadline" placeholder="Выполнить заказ до">
+
         </div>
         <p class="order__note">Нажимая на кнопку «Отправить», вы даёте <a href="#"
             class="order__note-link link">согласие на
@@ -262,12 +260,7 @@
 
   <!-- Footer -->
   <footer class="footer">
-    <div class="container">
-      <div class="footer__wrapper">
-        <p class="footer__text">© 2021 Репетитор</p>
-        <p class="footer__text">Разработчик <a href="#" class="footer__text-link">Александра Храпкова</a></p>
-      </div>
-    </div>
+      <p class="footer__text">© 2006-2021 Репетитор</p>
   </footer>
 
   <script src="assets/script.min.js"></script>
