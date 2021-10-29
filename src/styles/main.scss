@@ -99,6 +99,10 @@ body {
   line-height: 24px;
   font-weight: 400;
   color: $black;
+  @media (max-width: 500px) {
+    font-size: 14px;
+    line-height: 20px;
+  }
 }
 .container {
   max-width: 1200px;
