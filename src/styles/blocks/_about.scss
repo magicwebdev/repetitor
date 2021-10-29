@@ -1,6 +1,9 @@
 .about {
   padding: 100px 0;
-  background: url('/src/images/about-bg.jpg') repeat-x;
+  @media (max-width: 800px) {
+    padding: 50px 0;
+  }
+  background: url('/src/images/about-bg.jpg') center /cover repeat-x;
 
   text-align: center;
   &__title {
@@ -14,11 +17,19 @@
     grid-template-columns: 1fr 1fr;
     column-gap: 60px;
     text-align: left;
+    @media (max-width: 800px) {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto auto;
+      row-gap: 30px;
+    }
   }
   &__inner {
   }
   &__text + .about__text {
     margin-top: 30px;
+    @media (max-width: 800px) {
+      margin-top: 20px;
+    }
   }
   &__list-title {
     font-weight: 500;
@@ -26,6 +37,9 @@
     line-height: 24px;
     color: $black;
     margin-bottom: 30px;
+    @media (max-width: 800px) {
+      margin-bottom: 16px;
+    }
   }
   &__list {
   }
@@ -33,6 +47,9 @@
     position: relative;
     padding-left: 50px;
     margin-bottom: 40px;
+    @media (max-width: 800px) {
+      margin-bottom: 16px;
+    }
     &::before {
       content: '';
       display: block;

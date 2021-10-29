@@ -7,6 +7,15 @@
   line-height: 60px;
   color: $dark;
   text-transform: uppercase;
+  @media (max-width: 630px) {
+    font-size: 28px;
+    line-height: 38px;
+    padding: 0 40px;
+  }
+  @media (max-width: 500px) {
+    font-size: 26px;
+    line-height: 36px;
+  }
   &::before {
     position: absolute;
     top: 50%;
@@ -17,6 +26,9 @@
     width: 80px;
     height: 2px;
     background-color: $accent;
+    @media (max-width: 630px) {
+      width: 30px;
+    }
   }
   &::after {
     position: absolute;
@@ -28,6 +40,9 @@
     width: 80px;
     height: 2px;
     background-color: $accent;
+    @media (max-width: 630px) {
+      width: 30px;
+    }
   }
   &--big {
     font-weight: 600;
@@ -63,6 +78,11 @@
   font-size: 20px;
   line-height: 30px;
   color: $light;
+  @media (max-width: 800px) {
+    margin-bottom: 30px;
+    font-size: 18px;
+    line-height: 26px;
+  }
   &--big {
     margin: 0 0 40px 0;
     @media (max-width: 1020px) {
