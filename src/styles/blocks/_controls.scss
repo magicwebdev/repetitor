@@ -1,7 +1,8 @@
 .btn {
   width: 280px;
   height: 60px;
-  background: linear-gradient(270deg, #FFB319 -3.04%, rgba(255, 179, 25, 0.8) 100%);
+  background-color: $accent;
+  // background: linear-gradient(270deg, #FFB319 -3.04%, rgba(255, 179, 25, 0.8) 100%);
   box-shadow: 0px 4px 4px rgba(255, 179, 25, 0.25);
   border-radius: 8px;
   font-weight: 600;
@@ -10,9 +11,10 @@
   text-transform: uppercase;
   text-align: center;
   color: $white;
-  transition: all 0.3s ease;
+  transition: all 0.5s;
   &:hover {
-    opacity: .7;
+    background-color: $dark;
+    box-shadow: 0px 4px 4px rgba(25, 37, 61, 0.25);
   }
 }
 
