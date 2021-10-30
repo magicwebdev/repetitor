@@ -3,7 +3,7 @@
   text-align: center;
   background: url('/src/images/payment-bg.jpg') center repeat-x;
   @media (max-width: 800px) {
-    padding: 50px 0;
+    padding: 30px 0;
   }
   &__title {
   }
@@ -35,6 +35,10 @@
     }
   }
   &__list {
+    @media (max-width: 800px) {
+      max-width: 430px;
+      margin: 0 auto;
+    }
   }
   &__list-item {
   }
