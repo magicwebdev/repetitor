@@ -1,6 +1,9 @@
 .cooperation {
   padding: 100px 0;
   text-align: center;
+  @media (max-width: 800px) {
+    padding: 50px 0;
+  }
   &__title {
   }
   &__subtitle {
@@ -10,6 +13,11 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 60px;
+    @media (max-width: 800px) {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto auto;
+      row-gap: 30px;
+    }
   }
   &__illustration {
   }
@@ -20,15 +28,29 @@
     flex-direction: column;
     justify-content: space-around;
   }
+  &__content-inner {
+    @media (max-width: 800px) {
+      margin-bottom: 20px;
+    }
+  }
   &__text + .cooperation__text {
     margin-top: 30px;
+    @media (max-width: 800px) {
+      margin-top: 20px;
+    }
   }
   &__links {
     text-align: right;
+    @media (max-width: 800px) {
+      text-align: center;
+    }
   }
   &__link {
     font-size: 18px;
     line-height: 22px;
     margin-left: 30px;
+    @media (max-width: 800px) {
+      margin: 0 10px;
+    }
   }
 }
