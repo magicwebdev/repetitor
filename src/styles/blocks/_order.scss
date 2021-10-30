@@ -57,19 +57,22 @@
         line-height: 20px;
       }
     }
+    &--download {
+      opacity: 0;
+	    filter: alpha(opacity=0);
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: 2;
+      cursor: pointer;
+      width: auto;
+      height: 100%;
+    }
     &--file {
-      appearance: none;
-      font-family: inherit;
-      font-size: 16px;
-      line-height: 24px;
-      color: $light;
-      @media (max-width: 800px) {
-        font-size: 14px;
-        line-height: 20px;
-      }
+      background: $white url('/src/images/files.png') no-repeat top 55% right 5%;
     }
     &--date {
-      background: $white url('/src/images/calendar.png') no-repeat top 60% right 5%;
+      background: $white url('/src/images/calendar.png') no-repeat top 55% right 5%;
       font-family: inherit;
       font-size: 16px;
       line-height: 24px;
@@ -105,6 +108,10 @@
         line-height: 20px;
       }
     }
+  }
+  &__form-inner {
+    // overflow: hidden;
+	  position: relative;
   }
   &__note {
     margin: 20px 0 30px;

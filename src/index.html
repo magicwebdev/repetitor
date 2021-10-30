@@ -170,12 +170,14 @@
             <input class="order__form-input" required type="email" name="email" placeholder="Email *">
             <input class="order__form-input" type="text" name="topic" placeholder="Тема">
             <input class="order__form-input" type="text" name="institution" placeholder="Учебное заведение">
-            <input class="order__form-input order__form-input--file" type="file" name="files" placeholder="Прикрепить файлы">
+            <div class="order__form-inner">
+              <input class="order__form-input order__form-input--download" type="file" name="files">
+              <input class="order__form-input order__form-input--file" type="text" name="files" placeholder="Прикрепить файлы">
+            </div>
             <input class="order__form-input" type="text" name="faculty" placeholder="Факультет">
             <textarea class="order__form-input  order__form-input--textarea" name="notes" id=""
               placeholder="Дополнительная информация по работе"></textarea>
-            <input class="order__form-input order__form-input--date" type="date"  value="qwe" name="deadline" placeholder="Выполнить заказ до">
-
+            <input class="order__form-input order__form-input--date" type="date" value="" name="deadline" placeholder="Выполнить заказ до">
         </div>
         <p class="order__note">Нажимая на кнопку «Отправить», вы даёте <a href="#"
             class="order__note-link link">согласие на
