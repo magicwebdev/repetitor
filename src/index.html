@@ -154,6 +154,12 @@
       </p>
       <form action="#" method="post" class="order__form">
         <div class="order__form-wrapper">
+          <div class="order__form-column">
+
+          </div>
+          <div class="order__form-column">
+
+          </div>
 
             <input class="order__form-input" required type="text" name="name" placeholder="Имя *">
             <select class="order__form-input  order__form-input--select" name="choice">
@@ -172,12 +178,15 @@
             <input class="order__form-input" type="text" name="institution" placeholder="Учебное заведение">
             <div class="order__form-inner">
               <input class="order__form-input order__form-input--download" type="file" name="files">
-              <input class="order__form-input order__form-input--file" type="text" name="files" placeholder="Прикрепить файлы">
+              <input class="order__form-input order__form-input--file" type="text" placeholder="Прикрепить файлы">
             </div>
             <input class="order__form-input" type="text" name="faculty" placeholder="Факультет">
             <textarea class="order__form-input  order__form-input--textarea" name="notes" id=""
               placeholder="Дополнительная информация по работе"></textarea>
-            <input class="order__form-input order__form-input--date" type="date" value="" name="deadline" placeholder="Выполнить заказ до">
+            <div class="order__form-inner">
+              <input class="order__form-input order__form-input--datepick" type="date" value="" name="deadline">
+              <input class="order__form-input order__form-input--date" type="text" placeholder="Выполнить заказ до">
+            </div>
         </div>
         <p class="order__note">Нажимая на кнопку «Отправить», вы даёте <a href="#"
             class="order__note-link link">согласие на

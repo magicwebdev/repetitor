@@ -16,4 +16,17 @@ $(function() {
     $(this).parent().find('.order__form-input--file').val(fileResult);
   });
 
+  // отслеживаем изменение инпута date
+  $('.order__form-input--datepick').change(function(){
+    // если файл прикрепили то заносим значение value в переменную
+    let fileResult = $(this).val();
+    // и дальше передаем значение в инпут который под загрузчиком
+    $(this).parent().find('.order__form-input--date').val(fileResult);
+  });
+
+  // отслеживаем изменение select
+  $('.order__form-input--select').change(function(){
+    $(this).css('color', '#262727');
+  });
+
 });

@@ -52,6 +52,9 @@
       font-size: 16px;
       line-height: 24px;
       color: $light;
+      & option:first-child {
+        display: none;
+      }
       @media (max-width: 800px) {
         font-size: 14px;
         line-height: 20px;
@@ -71,16 +74,22 @@
     &--file {
       background: $white url('/src/images/files.png') no-repeat top 55% right 5%;
     }
+    &--datepick {
+      opacity: 0;
+	    filter: alpha(opacity=0);
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: 2;
+      cursor: pointer;
+      width: 100%;
+      height: 100%;
+    }
     &--date {
       background: $white url('/src/images/calendar.png') no-repeat top 55% right 5%;
-      font-family: inherit;
-      font-size: 16px;
-      line-height: 24px;
-      color: $light;
-      @media (max-width: 800px) {
-        font-size: 14px;
-        line-height: 20px;
-      }
+      position: absolute;
+      top: 0;
+      right: 0;
     }
     &--textarea {
       grid-column: 2/3;
