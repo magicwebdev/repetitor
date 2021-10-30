@@ -1,7 +1,10 @@
 .payment {
   padding: 100px 0;
   text-align: center;
-  background: url('/src/images/payment-bg.jpg') repeat-x;
+  background: url('/src/images/payment-bg.jpg') center repeat-x;
+  @media (max-width: 800px) {
+    padding: 50px 0;
+  }
   &__title {
   }
   &__subtitle {
@@ -12,6 +15,11 @@
     grid-template-columns: 1fr 1fr;
     column-gap: 60px;
     margin-bottom: 30px;
+    @media (max-width: 800px) {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto auto;
+      row-gap: 30px;
+    }
   }
   &__inner {
   }
@@ -21,6 +29,10 @@
     font-size: 18px;
     line-height: 24px;
     color: $black;
+    @media (max-width: 800px) {
+      margin-bottom: 16px;
+      text-align: center;
+    }
   }
   &__list {
   }
@@ -32,6 +44,10 @@
     font-size: 18px;
     line-height: 24px;
     color: $black;
+    @media (max-width: 800px) {
+      margin-bottom: 16px;
+      text-align: center;
+    }
   }
   &__img {
     margin: 0 auto;
