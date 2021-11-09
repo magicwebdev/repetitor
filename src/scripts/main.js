@@ -29,4 +29,20 @@ $(function() {
     $(this).css('color', '#262727');
   });
 
+  // плавный скролл по ссылкам
+  $("a[href^='#']").click(function () {
+    var _href = $(this).attr('href');
+    $('html, body').animate({ scrollTop: $(_href).offset().top + 'px' });
+    return false;
+  });
+
+  // кнопка "Вверх"
+  $(window).on('scroll', function() {
+    if($(this).scrollTop() > 1600) {
+      $('.up-btn').fadeIn();
+    } else {
+      $('.up-btn').fadeOut();
+    }
+  });
+
 });

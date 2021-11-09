@@ -18,16 +18,25 @@
   }
   &__form {
     margin-top: 40px;
+    @media (max-width: 800px) {
+      margin-top: 20px;
+    }
   }
   &__form-wrapper {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(6, auto);
+    grid-template: 1fr / 1fr 1fr;
     column-gap: 60px;
-    row-gap: 20px;
     @media (max-width: 800px) {
       grid-template-columns: 1fr;
-      grid-template-rows: repeat(12, auto);
+      row-gap: 10px;
+    }
+  }
+  &__form-column {
+    display: grid;
+    grid-template: repeat(6, 60px) / 1fr;
+    row-gap: 20px;
+    @media (max-width: 800px) {
+      grid-template: repeat(6, 50px) / 1fr;
       row-gap: 10px;
     }
   }
@@ -41,7 +50,7 @@
     line-height: 24px;
     color: $black;
     @media (max-width: 800px) {
-      padding: 16px 20px;
+      padding: 10px 20px;
       font-size: 14px;
       line-height: 20px;
     }
@@ -73,6 +82,10 @@
     }
     &--file {
       background: $white url('/src/images/files.png') no-repeat top 55% right 5%;
+      height: 60px;
+      @media (max-width: 800px) {
+        height: 50px;
+      }
     }
     &--datepick {
       opacity: 0;
@@ -87,16 +100,18 @@
     }
     &--date {
       background: $white url('/src/images/calendar.png') no-repeat top 55% right 5%;
+      height: 60px;
       position: absolute;
       top: 0;
       right: 0;
+      @media (max-width: 800px) {
+        height: 50px;
+      }
     }
     &--textarea {
-      grid-column: 2/3;
       grid-row: 5/7;
+      align-self: stretch;
       @media (max-width: 800px) {
-        grid-column: unset;
-        grid-row: 11/13;
         font-size: 14px;
         line-height: 20px;
       }
